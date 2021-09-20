@@ -1,8 +1,18 @@
+import React, { useState, useEffect } from 'react';
+
 import "./Styles/app.scss";
 import ProfileIcon from "./images/profile.svg";
 import PhoneCoverIcon from "./images/phoncover.png";
 
 function App() {
+
+  useEffect(() => {
+    var video=document.getElementById("myVideo");
+    console.log('video',video);
+    video.play();
+  });
+
+
   var sectionElements = [
     {
       imageUrl:
@@ -64,7 +74,7 @@ function App() {
       </div>
       <div className="heroSection">
         <div className="hero-background">
-          <video autoplay loop id="myVideo">
+          <video autoPlay muted loop id="myVideo">
             <source
               src="https://assets.yousician.com/app/uploads/2021/02/19115431/YS-landing-page-demo-2-compressed.mp4"
               type="video/mp4"
