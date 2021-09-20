@@ -6,13 +6,7 @@ import PhoneCoverIcon from "./images/phoncover.png";
 
 function App() {
 
-  useEffect(() => {
-    var video=document.getElementById("myVideo");
-    console.log('video',video);
-    video.play();
-  });
-
-
+ 
   var sectionElements = [
     {
       imageUrl:
